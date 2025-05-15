@@ -47,7 +47,7 @@
             const nombre = prompt("Introduce el nombre de un Pokémon:");
             if (!nombre) return;
 
-            fetch(`http://TU_IP_EC2:5000/pokemon?nombre=${nombre}`)
+            fetch(`http://54.80.158.65/pokemon?nombre=${nombre}`)
                 .then(res => res.json())
                 .then(data => {
                     if (data.error) {
