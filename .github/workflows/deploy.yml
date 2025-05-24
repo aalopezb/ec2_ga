@@ -17,5 +17,4 @@ jobs:
           script: |
             cd ~/portal-principal || exit 1
             git pull origin main
-            pkill -f app.py || true
-            nohup python3 app.py > output.log 2>&1 &
+            pm2 restart portal || pm2 start app.py --interpreter=python3 --name portal
