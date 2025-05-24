@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Central de Microservicios</title>
+    <title>Central de Microservicios 1.0</title>
     <style>
         body {
             font-family: sans-serif;
@@ -47,7 +47,7 @@
             const nombre = prompt("Introduce el nombre de un Pokémon:");
             if (!nombre) return;
 
-            fetch(`http://44.196.114.105/pokemon?nombre=${nombre}`)
+            fetch(`http://35.168.100.140/pokemon?nombre=${nombre}`)
                 .then(res => res.json())
                 .then(data => {
                     if (data.error) {
